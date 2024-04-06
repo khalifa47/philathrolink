@@ -72,7 +72,7 @@ const Hero = () => {
             Link
           </Typography>
         </Typography>
-        <Typography variant="h6" fontWeight={200}>
+        <Typography variant="h6" fontWeight={200} padding={{ xs: 2, sm: 0 }}>
           Uniting Causes, Building Together, and Empowering Aspirations to
           Ignite Change and Impact Destinies Forever: Where Every Donation Makes
           a Difference.

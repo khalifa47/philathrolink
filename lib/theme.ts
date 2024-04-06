@@ -1,6 +1,6 @@
 "use client";
 import { Raleway } from "next/font/google";
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { lightBlue, orange } from "@mui/material/colors";
 
 const raleway = Raleway({
@@ -28,4 +28,4 @@ const theme = createTheme({
   },
 });
 
-export default theme;
+export default responsiveFontSizes(theme);
