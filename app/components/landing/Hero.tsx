@@ -46,7 +46,7 @@ const Hero = () => {
           height: "100%",
           objectFit: "cover",
           objectPosition: "center",
-          filter: "brightness(0.3)",
+          filter: "brightness(0.15)",
         }}
       />
       <Container
@@ -61,6 +61,7 @@ const Hero = () => {
           justifyContent: "center",
         }}
       >
+        {/* TODO: replace with a tagline header */}
         <Typography variant="h1">
           Philanthro
           <Typography
