@@ -32,7 +32,7 @@ const Logo = ({ small }: { small?: boolean }) => {
 };
 
 const Header = () => {
-  const pages = ["Requests", "Categories", "Learn More"];
+  const pages = ["Explore", "Categories", "Locations", "Learn More"];
   const settings = ["Profile", "Account", "Dashboard", "Logout"];
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);

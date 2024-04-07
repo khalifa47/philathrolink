@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import Link from "next/link";
+import SeeMore from "./SeeMore";
 
 const Hero = () => {
   return (
@@ -87,6 +88,7 @@ const Hero = () => {
           </Button>
         </Box>
       </Container>
+      <SeeMore id="discover" />
     </Box>
   );
 };
