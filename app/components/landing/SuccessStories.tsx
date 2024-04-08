@@ -4,8 +4,8 @@ import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import SectionWrapper from "../layout/SectionWrapper";
 
 type Testimonial = {
   avatar: JSX.Element;
@@ -81,16 +81,7 @@ const GridItem = ({ avatar, name, place, testimonial }: Testimonial) => {
 
 const SuccessStories = () => {
   return (
-    <Container
-      component="section"
-      id="testimonials"
-      sx={{
-        p: { xs: 2, md: 4 },
-        display: "flex",
-        flexDirection: "column",
-        gap: { xs: 2, sm: 4 },
-      }}
-    >
+    <SectionWrapper id="testimonials">
       <Box>
         <Typography variant="h4" fontWeight={500}>
           Success Stories
@@ -106,7 +97,7 @@ const SuccessStories = () => {
           </Grid>
         ))}
       </Grid>
-    </Container>
+    </SectionWrapper>
   );
 };
 

@@ -1,4 +1,3 @@
-import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -13,6 +12,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Link from "next/link";
 import SelectBox from "./SelectBox";
 import { formatNumber, formatNumberWithAbbr } from "@/lib/utils";
+import SectionWrapper from "../layout/SectionWrapper";
 
 type Item = {
   id: string;
@@ -113,17 +113,7 @@ const GridItem = ({
 // TODO: maybe change layout later
 const Discover = () => {
   return (
-    <Container
-      component="section"
-      id="discover"
-      sx={{
-        minHeight: "100vh",
-        p: { xs: 2, md: 4 },
-        display: "flex",
-        flexDirection: "column",
-        gap: { xs: 2, md: 4 },
-      }}
-    >
+    <SectionWrapper id="discover">
       <Box
         display="flex"
         flexDirection={{ xs: "column", md: "row" }}
@@ -167,7 +157,7 @@ const Discover = () => {
           </Button>
         </Grid>
       </Grid>
-    </Container>
+    </SectionWrapper>
   );
 };
 
