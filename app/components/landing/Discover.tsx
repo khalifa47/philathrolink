@@ -34,6 +34,7 @@ const GridItem = ({
   const progress = (totalRaised / totalNeeded) * 100;
   return (
     <Card
+      variant="outlined"
       sx={{
         height: { xs: 110, md: 290 },
         position: "relative",
@@ -131,10 +132,10 @@ const Discover = () => {
         alignItems={{ xs: "flex-start", md: "center" }}
       >
         <div>
-          <Typography variant="h2" fontWeight={500}>
+          <Typography variant="h4" fontWeight={500}>
             Discover
           </Typography>
-          <Typography variant="body1" fontWeight={300}>
+          <Typography variant="body1" fontWeight={300} color="text.secondary">
             A glance of projects underway at the moment
           </Typography>
         </div>
