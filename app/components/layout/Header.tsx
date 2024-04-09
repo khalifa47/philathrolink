@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import { useState } from "react";
 
-const Logo = ({ small }: { small?: boolean }) => {
+export const Logo = ({ small }: { small?: boolean }) => {
   const display = small
     ? { xs: "flex", md: "none" }
     : { xs: "none", md: "flex" };
